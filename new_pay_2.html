@@ -70,23 +70,29 @@
 
     <!-- Page Content -->
     <div class="container">
-		<div class="text-center m-3">
-			<img src="img/PayIt/ProfilePicture.jpg" alt="Profile Picture" height="200">
-			<div class="jumbotron m-3">
-				<p>Multi-line</p>
-				<p>textarea</p>
-				<p>&nbsp</p>
-				<p>&nbsp</p>
-				<p>&nbsp</p>
-				<p>&nbsp</p>
-				<p>&nbsp</p>
+		<form action="new_pay_3.html" method="post" class="m-3">
+			<div class="form-group">
+				<label for="field1">Multi-text textarea</label>
+				<select id="field1" class="form-control">
+					<option>Option</option>
+					<option>Option</option>
+					<option>Option</option>
+					<option>Option</option>
+					
+				</select>
 			</div>
-			<div class="text-center">
-				<button class="btn btn-primary" type="submit">Button</button>
+			<div class="form-group">
+				<label for="field2">Multi-text textarea</label>
+				<input type="text" id="field2" class="form-control" placeholder="Data input">
 			</div>
-		</div>
-
-
+			<div class="form-group">
+				<label for="field3">Multi-text textarea</label>
+				<input type="text" id="field3" class="form-control" placeholder="Data input">
+			</div>
+			<div class="text-right">
+				<button type="submit" class="btn btn-primary">Button</button>
+			</div>
+		</form>
     </div>
     <!-- /.container -->
 
