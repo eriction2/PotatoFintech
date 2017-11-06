@@ -77,7 +77,7 @@ section {
     font-size: 50px; }
 
 
-header.masthead {
+/*header.masthead {
   position: relative;
   width: 100%;
   padding-top: 150px;
@@ -111,6 +111,42 @@ header.masthead {
           font-size: 50px; }
       header.masthead .device-container {
         max-width: 325px; } }
+*/
+header.masthead {
+  position: relative;
+  padding: 250px 0;
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  header.masthead .header-content {
+    max-width: 500px;
+    margin-bottom: 100px;
+    text-align: center; }
+    header.masthead .header-content h1 {
+      font-size: 40px;
+      color: black }
+  header.masthead .device-container {
+    max-width: 325px;
+    margin-right: auto;
+    margin-left: auto; }
+    header.masthead .device-container .screen img {
+      border-radius: 3px; }
+  @media (min-width: 992px) {
+    header.masthead {
+      height: 100vh;
+      min-height: 775px;
+      padding-top: 0;
+      padding-bottom: 0; }
+      header.masthead .header-content {
+        margin-bottom: 0;
+        text-align: left; }
+        header.masthead .header-content h1 {
+          font-size: 50px; }
+      header.masthead .device-container {
+        max-width: 325px; } }}
 
 section.download {
   position: relative;
@@ -170,7 +206,7 @@ section.cta {
   position: relative;
   padding: 250px 0;
   background-image: url("../img/bg-cta.jpg");
-  background-position: center;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -242,9 +278,9 @@ footer {
         text-decoration: none; }
 
 .bg-primary {
-  background: #ce0400;
-  background: -webkit-linear-gradient(#ce0400, #990000);
-  background: linear-gradient(#ce0400, #990000); }
+  background: #cca300;
+  background: -webkit-linear-gradient(#cca300, #c68c53);
+  background: linear-gradient(#cca300, #c68c53); }
 
 .text-primary {
   color: #fdcc52; }
