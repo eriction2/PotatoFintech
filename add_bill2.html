@@ -86,36 +86,48 @@
     <!-- Page Content -->
     <section class="options bg-primary" id="options">
       <div class="container">
-        <h1 class="my-4">Time to add a new bill!</h1>
+        <h1 class="my-4">Who and how much?</h1>
 
       <!-- Marketing Icons Section -->
         <div class="row">
-          <div class="col-md"> Which Group?</div>
+          <div class="col-md"> The Amount </div>
           <div class="col-md">
-            <select class="selectpicker " data-live-search="true">
-              <option data-tokens="ketchup mustard">Friends from School</option>
-              <option data-tokens="mustard">City Uni Folks</option>
-              <option data-tokens="frosting">Badminton Team</option>
-              <option data-tokens="frosting">Family</option>
-            </select>
+          <input type="text" class="form-control" name="Amount" placeholder="0.00 HKD" required="" autofocus="" />
           </div>
         </div>
+        <br>
         <div class="row">
-          <div class="col-md"> Who is paying? </div>
+          <div class="col-md"> Multiplicity </div>
+          <label class="radio-inline"><input type="radio" name="radio" id="every_one" onclick="every_one();">Everyone</label>
+          <label class="radio-inline"><input type="radio" name="radio" id="no_one"checked="checked" onclick="no_one();">No-one</label>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md"> Dylan</div>
           <div class="col-md">
-            <select class="selectpicker" data-live-search="true">
-              <option data-tokens="ketchup mustard">Dylan</option>
-              <option data-tokens="mustard">Karen</option>
-              <option data-tokens="frosting">Nancy</option>
-              <option data-tokens="frosting">Peter</option>
-            </select>
+          <input type="text" class="form-control" name="Dylan" id="Dylan" placeholder="0" required="" autofocus="" />
+          </div>
+
+          <div class="col-md"> Karen</div>
+          <div class="col-md">
+          <input type="text" class="form-control" name="Amount" id="Karen" placeholder="0" required="" autofocus="" />
+          </div>
+
+          <div class="col-md"> Nancy</div>
+          <div class="col-md">
+          <input type="text" class="form-control" name="Amount" id="Nancy" placeholder="0" required="" autofocus="" />
+          </div>
+
+          <div class="col-md"> Peter</div>
+          <div class="col-md">
+          <input type="text" class="form-control" name="Amount" id="Peter" placeholder="0" required="" autofocus="" />
           </div>
         </div>
         <br>
         <div class="row">
           <div class="col-md">  </div>
           <div class="col-md">
-          <a class="btn btn-lg btn-primary btn-block"  name="Submit" value="Login" type="Submit" href="add_bill2.html">Ok</a> 
+          <a class="btn btn-lg btn-primary btn-block"  name="Submit" value="Login" type="Submit" href="add_bill3.html">Ok</a> 
           </div>
           <div class="col-md">
           <a class="btn btn-lg btn-danger btn-block"  name="Submit" value="Login" type="Submit" href="main.html">Cancle</a> 
@@ -150,6 +162,27 @@
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/live_search.js"></script>
+
+    <!--personalized function -->
+    <script>
+    document.getElementById("every_one").onclick = function () { 
+      document.getElementById("Dylan").value="1"; 
+      document.getElementById("Karen").value="1"; 
+      document.getElementById("Nancy").value="1"; 
+      document.getElementById("Peter").value="1"; 
+    };
+    document.getElementById("no_one").onclick = function () { 
+      document.getElementById("Dylan").value="0"; 
+      document.getElementById("Karen").value="0"; 
+      document.getElementById("Nancy").value="0"; 
+      document.getElementById("Peter").value="0"; 
+    };
+      //$(document).ready(function(){
+        //$('#every_one').onclick(function(){
+          //$('#Dylan').value = "0";
+        //});
+      //});
+    </script>
   </body>
 
 </html>
