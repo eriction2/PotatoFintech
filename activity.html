@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
 
+
+    <!-- Definitions of the website-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Modern Business - Start Bootstrap Template</title>
-
+    <meta name="description" content="Potato FinTech CityU Hong Kong CS3382 Group 1 - Potato FinTech helps users in FinTech related manners. PayIt, SplitIt, ManageIt. This Website was created for the course CS3382 for developing PotatoFinTech">
+    <meta name="author" content="Potato FinTech CityU Hong Kong CS3382 Group 1 ">
+  <meta name="keywords" content="Potato FinTech CityU Hong Kong CS3382, Potato, FinTech, PotatoFinTech, CityU, City University, Hong, Kong, CS3382, Group 1, FinTechPotato, Hong Kong">
+    <title>"Potato FinTech" CityU Hong Kong CS3382 - Group 1</title>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
-
   </head>
 
   <body>
@@ -23,242 +29,337 @@
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+        <a class="navbar-brand" href="main.html">Potato FinTech</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPayIt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PayIt
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPayIt">
+                <a class="dropdown-item" href="new_pay_1.html">New Payment</a>
+                <a class="dropdown-item" href="history.html">History</a>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Services</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSplitIt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SplitIt
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownSplitIt">
+                <a class="dropdown-item" href="add_bill.html">Add bill</a>
+                <a class="dropdown-item" href="activity.html">Activity</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownManageIt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ManageIt
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownManageIt">
+                <a class="dropdown-item" href="view_card.html">View cards</a>
+                <a class="dropdown-item" href="add_card.html">Add card</a>
+                <a class="dropdown-item" href="remove_card.html">Remove card</a>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Portfolio
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-                <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-                <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-              </div>
-            </li>
-            <li class="nav-item active dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Blog
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-                <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
-                <a class="dropdown-item active" href="blog-post.html">Blog Post</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Other Pages
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-                <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-                <a class="dropdown-item" href="faq.html">FAQ</a>
-                <a class="dropdown-item" href="404.html">404</a>
-                <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-              </div>
-            </li>
+
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Page Content -->
-    <div class="container">
 
+
+    <!-- Page Content -->
+ <!-- Page Content -->
+    <section class="options bg-primary" id="options">
+    <div class="container">
       <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Post Title
-        <small>by
-          <a href="#">Start Bootstrap</a>
-        </small>
+      <h1 class="mt-4 mb-3"> Acitivity
       </h1>
 
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="index.html">Home</a>
+          <a href="main.html">Home</a>
         </li>
-        <li class="breadcrumb-item active">Blog Home 2</li>
+        <li class="breadcrumb-item active">SplitIt! - Activitiy</li>
       </ol>
 
-      <div class="row">
-
-        <!-- Post Content Column -->
-        <div class="col-lg-8">
-
-          <!-- Preview Image -->
-          <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
-
-          <hr>
-
-          <!-- Date/Time -->
-          <p>Posted on January 1, 2017 at 12:00 PM</p>
-
-          <hr>
-
-          <!-- Post Content -->
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
-
-          <blockquote class="blockquote">
-            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">Someone famous in
-              <cite title="Source Title">Source Title</cite>
-            </footer>
-          </blockquote>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
-
-          <hr>
-
-          <!-- Comments Form -->
-          <div class="card my-4">
-            <h5 class="card-header">Leave a Comment:</h5>
-            <div class="card-body">
-              <form>
-                <div class="form-group">
-                  <textarea class="form-control" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </div>
+      <div class="mb-4" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="card">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Beers at Billy Boozers</a>
+            </h5>
           </div>
 
-          <!-- Single Comment -->
-          <div class="media mb-4">
-            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-            <div class="media-body">
-              <h5 class="mt-0">Commenter Name</h5>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+            <div class="card-body"><center>
+            <b>Activity Details : </b> <br>
+         
+           <style type="text/css">
+      .tg  {border-collapse:collapse;border-spacing:0;border-width:1px;border-style:none;}
+      .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:none;border-width:0px;overflow:hidden;word-break:normal;}
+      .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:none;border-width:0px;overflow:hidden;word-break:normal;}
+      .tg .tg-7uzy{vertical-align:top}
+      .tg .tg-lqy6{text-align:right;vertical-align:top}
+      .tg .tg-yw4l{vertical-align:top}
+      </style>
+      <table class="tg">
+        <tr>
+          <th class="tg-yw4l">27/9/2017</th>
+          <th class="tg-yw4l">Paid by Dylan</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6">550 HKD</th>
+        </tr>
+        <tr>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6"></th>
+        </tr>
+        <tr>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">Dylan</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">2</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6">+450 HKD</th>
+        </tr>
+        <tr>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">Karen</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">3</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6">-150 HKD</th>
+        </tr>
+        <tr>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">Nancy</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">2</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6">-100 HKD</th>
+        </tr>
+        <tr>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">Peter</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">4</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6">-200 HKD</th>
+        </tr>
+      </table>
+                     
             </div>
           </div>
-
-          <!-- Comment with nested comments -->
-          <div class="media mb-4">
-            <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-            <div class="media-body">
-              <h5 class="mt-0">Commenter Name</h5>
-              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-
-              <div class="media mt-4">
-                <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-                <div class="media-body">
-                  <h5 class="mt-0">Commenter Name</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                </div>
-              </div>
-
-              <div class="media mt-4">
-                <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-                <div class="media-body">
-                  <h5 class="mt-0">Commenter Name</h5>
-                  Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-                </div>
-              </div>
-
-            </div>
-          </div>
-
         </div>
-
-        <!-- Sidebar Widgets Column -->
-        <div class="col-md-4">
-
-          <!-- Search Widget -->
-          <div class="card mb-4">
-            <h5 class="card-header">Search</h5>
-            <div class="card-body">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for...">
-                <span class="input-group-btn">
-                  <button class="btn btn-secondary" type="button">Go!</button>
-                </span>
-              </div>
-            </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingTwo">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Borred Money
+              </a>
+            </h5>
           </div>
-
-          <!-- Categories Widget -->
-          <div class="card my-4">
-            <h5 class="card-header">Categories</h5>
-            <div class="card-body">
-              <div class="row">
-                <div class="col-lg-6">
-                  <ul class="list-unstyled mb-0">
-                    <li>
-                      <a href="#">Web Design</a>
-                    </li>
-                    <li>
-                      <a href="#">HTML</a>
-                    </li>
-                    <li>
-                      <a href="#">Freebies</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul class="list-unstyled mb-0">
-                    <li>
-                      <a href="#">JavaScript</a>
-                    </li>
-                    <li>
-                      <a href="#">CSS</a>
-                    </li>
-                    <li>
-                      <a href="#">Tutorials</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Side Widget -->
-          <div class="card my-4">
-            <h5 class="card-header">Side Widget</h5>
-            <div class="card-body">
-              You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
-            </div>
-          </div>
-
-        </div>
-
+          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="card-body"><center>
+            <b>Activity Details : </b> <br>
+         
+           <style type="text/css">
+      .tg  {border-collapse:collapse;border-spacing:0;border-width:1px;border-style:none;}
+      .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:none;border-width:0px;overflow:hidden;word-break:normal;}
+      .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:none;border-width:0px;overflow:hidden;word-break:normal;}
+      .tg .tg-7uzy{vertical-align:top}
+      .tg .tg-lqy6{text-align:right;vertical-align:top}
+      .tg .tg-yw4l{vertical-align:top}
+      </style>
+      <table class="tg">
+        <tr>
+          <th class="tg-yw4l">27/9/2017</th>
+          <th class="tg-yw4l">Paid by Karren</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6">230 HKD</th>
+        </tr>
+        <tr>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6"></th>
+        </tr>
+        <tr>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">Dylan</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">1</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6">-230 HKD</th>
+        </tr>
+        <tr>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">Karen</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">0</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6">+230 HKD</th>
+        </tr>
+        <tr>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">Nancy</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">0</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6">0 HKD</th>
+        </tr>
+        <tr>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">Peter</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">0</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6">0 HKD</th>
+        </tr>
+      </table>
       </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingThree">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Dinner Thai restruant</a>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="card-body"><center>
+            <b>Activity Details : </b> <br>
+         
+           <style type="text/css">
+      .tg  {border-collapse:collapse;border-spacing:0;border-width:1px;border-style:none;}
+      .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:none;border-width:0px;overflow:hidden;word-break:normal;}
+      .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:none;border-width:0px;overflow:hidden;word-break:normal;}
+      .tg .tg-7uzy{vertical-align:top}
+      .tg .tg-lqy6{text-align:right;vertical-align:top}
+      .tg .tg-yw4l{vertical-align:top}
+      </style>
+      <table class="tg">
+        <tr>
+          <th class="tg-yw4l">27/9/2017</th>
+          <th class="tg-yw4l">Paid by Dylan</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6">550 HKD</th>
+        </tr>
+        <tr>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6"></th>
+        </tr>
+        <tr>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">Dylan</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">2</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6">+450 HKD</th>
+        </tr>
+        <tr>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">Karen</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">3</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6">-150 HKD</th>
+        </tr>
+        <tr>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">Nancy</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">2</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6">-100 HKD</th>
+        </tr>
+        <tr>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">Peter</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l">4</th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-yw4l"></th>
+          <th class="tg-lqy6">-200 HKD</th>
+        </tr>
+      </table>
+       </div>
+          </div>
+        </div>
+      </div>
+</div>
+    </section>
       <!-- /.row -->
 
-    </div>
-    <!-- /.container -->
-
+     
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer>
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <p>&copy; 3382 PotatoFinTech. All Rights Reserved.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Privacy</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Terms</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
       </div>
-      <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109354792-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    gtag('config', 'UA-109354792-1');
+  </script>
 
   </body>
-
 </html>

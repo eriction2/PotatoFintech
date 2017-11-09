@@ -40,7 +40,7 @@ body {
   font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif'; }
 
 a {
-  color: #fdcc52;
+  color: black;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s; }
@@ -64,7 +64,8 @@ h5,
 h6 {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  color: black }
 
 p {
   font-size: 18px;
@@ -115,7 +116,7 @@ section {
 header.masthead {
   position: relative;
   padding: 250px 0;
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background2.jpg");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -127,7 +128,7 @@ header.masthead {
     text-align: center; }
     header.masthead .header-content h1 {
       font-size: 40px;
-      color: black }
+      color: white }
   header.masthead .device-container {
     max-width: 325px;
     margin-right: auto;
