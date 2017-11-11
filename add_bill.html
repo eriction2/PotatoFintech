@@ -86,12 +86,23 @@
     <!-- Page Content -->
     <section class="options bg-primary" id="options">
       <div class="container">
-        <h1 class="my-4">Time to add a new bill!</h1>
+        <h1 class="mt-4 mb-3">Time to add a new bill!</h1>
 
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="main.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">SplitIt! - Add Bill</li>
+      </ol>
       <!-- Marketing Icons Section -->
+            <div class="row">
+                <div class="col-md"><label>Title</label></div><br>
+                <div class="col-md"><input type="tel" class="form-control" id="phone"></div>
+            </div>
+            <br>
         <div class="row">
           <div class="col-md"> Which Group?</div>
-          <div class="col-md">
+          <div class="col-md" align="right">
             <select class="selectpicker " data-live-search="true">
               <option data-tokens="ketchup mustard">Friends from School</option>
               <option data-tokens="mustard">City Uni Folks</option>
@@ -102,7 +113,7 @@
         </div>
         <div class="row">
           <div class="col-md"> Who is paying? </div>
-          <div class="col-md">
+          <div class="col-md" align="right">
             <select class="selectpicker" data-live-search="true">
               <option data-tokens="ketchup mustard">Dylan</option>
               <option data-tokens="mustard">Karen</option>
@@ -150,6 +161,16 @@
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/live_search.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109354792-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+    gtag('config', 'UA-109354792-1');
+  </script>
+
   </body>
 
 </html>

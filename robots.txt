@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /LICENSE
+Disallow: /Not_used_html
+Disallow: /css
+Disallow: /device-mockups
+Disallow: /vendor
+Disallow: /scss
+Disallow: /img
+Disallow: /mail
+Disallow: /js
+

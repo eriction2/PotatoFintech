@@ -87,7 +87,12 @@
     <section class="options bg-primary" id="options">
       <div class="container">
         <h1 class="my-4">Who and how much?</h1>
-
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="main.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">SplitIt! - Add Bill</li>
+      </ol>
       <!-- Marketing Icons Section -->
         <div class="row">
           <div class="col-md"> The Amount </div>
@@ -98,8 +103,11 @@
         <br>
         <div class="row">
           <div class="col-md"> Multiplicity </div>
-          <label class="radio-inline"><input type="radio" name="radio" id="every_one" onclick="every_one();">Everyone</label>
-          <label class="radio-inline"><input type="radio" name="radio" id="no_one"checked="checked" onclick="no_one();">No-one</label>
+          <div class="col-md" align="right">
+          <label class="radio-inline">
+          <input type="radio" name="radio" id="every_one" onclick="every_one();">Everyone</label>
+          <label class="radio-inline"><input type="radio" name="radio" id="no_one" checked="checked" onclick="no_one();">No-one</label>
+        </div>
         </div>
         <br>
         <div class="row">
@@ -183,6 +191,16 @@
         //});
       //});
     </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109354792-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+    gtag('config', 'UA-109354792-1');
+  </script>
+
   </body>
 
 </html>
