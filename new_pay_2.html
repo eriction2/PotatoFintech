@@ -5,13 +5,25 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Potato FinTech CityU Hong Kong CS3382 Group 1 - Potato FinTech helps users in FinTech related manners. PayIt, SplitIt, ManageIt. This Website was created for the course CS3382 for developing PotatoFinTech">
+    <meta name="author" content="Potato FinTech CityU Hong Kong CS3382 Group 1 ">
+  <meta name="keywords" content="Potato, FinTech, CityU, Hong, Kong, CS3382, Group 1, FinTechPotato, Hong Kong">
 
-    <title>New Payment</title>
+
+    <title>"Potato FinTech" CityU Hong Kong CS3382 - Group 1</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
 
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
@@ -66,34 +78,33 @@
       </div>
     </nav>
 
-
-
     <!-- Page Content -->
-    <div class="container">
-		<form action="new_pay_3.html" method="post" class="m-3">
-			<div class="form-group">
-				<label for="field1">Multi-text textarea</label>
-				<select id="field1" class="form-control">
-					<option>Option</option>
-					<option>Option</option>
-					<option>Option</option>
-					<option>Option</option>
-					
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="field2">Multi-text textarea</label>
-				<input type="text" id="field2" class="form-control" placeholder="Data input">
-			</div>
-			<div class="form-group">
-				<label for="field3">Multi-text textarea</label>
-				<input type="text" id="field3" class="form-control" placeholder="Data input">
-			</div>
-			<div class="text-right">
-				<button type="submit" class="btn btn-primary">Button</button>
-			</div>
-		</form>
-    </div>
+	<section class="options bg-primary" id="options">
+		<div class="container">
+			<form action="new_pay_3.html" method="get" class="m-3">
+				<div class="form-group">
+					<label for="field1">Receiver Name</label>
+					<p id="receiver"></p>
+					<input type="hidden" id="field1" class="form-control" name="receiver">
+				</div>
+				<div class="form-group">
+					<label for="field2">Amount Transfer</label>
+					<div class="input-group">
+						<span class="input-group-addon">HKD$</span>
+						<input type="number" id="field2" class="form-control" placeholder="Amount Transfer" name="amount" min="0">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="field3">Remark</label>
+					<textarea class="form-control" rows="3" id="field3" placeholder="Remark"></textarea>
+				</div>
+				<input type="hidden" id="field4" name="accountnumber">
+				<div class="text-right">
+					<button type="submit" class="btn btn-primary">Confirm</button>
+				</div>
+			</form>
+		</div>
+	</section>
     <!-- /.container -->
 
     <!-- Footer -->
@@ -108,6 +119,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/new_pay_2.js"></script>
 
   </body>
 
