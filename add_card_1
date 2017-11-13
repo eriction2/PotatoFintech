@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Potato FinTech CityU Hong Kong CS3382 Group 1 - Potato FinTech helps users in FinTech related manners. PayIt, SplitIt, ManageIt. This Website was created for the course CS3382 for developing PotatoFinTech">
+    <meta name="author" content="Potato FinTech CityU Hong Kong CS3382 Group 1 ">
+  <meta name="keywords" content="Potato, FinTech, CityU, Hong, Kong, CS3382, Group 1, FinTechPotato, Hong Kong">
+
+
+    <title>"Potato FinTech" CityU Hong Kong CS3382 - Group 1</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+
+
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="main.html">Potato FinTech</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPayIt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PayIt
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPayIt">
+                <a class="dropdown-item" href="new_pay_1.html">New Payment</a>
+                <a class="dropdown-item" href="history.html">History</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSplitIt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SplitIt
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownSplitIt">
+                <a class="dropdown-item" href="add_bill.html">Add bill</a>
+                <a class="dropdown-item" href="activity.html">Activity</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownManageIt" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ManageIt
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownManageIt">
+                <a class="dropdown-item" href="view_card.html">View cards</a>
+                <a class="dropdown-item" href="add_card.html">Add card</a>
+                <a class="dropdown-item" href="remove_card.html">Remove card</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Page Content -->
+    <section class="options bg-primary" id="options">
+      <div class="container">
+        <h1 class="mt-4 mb-3">New Card Added!</h1>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="main.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">ManageIt ! - Add Card</li>
+      </ol>
+      <!-- Marketing Icons Section -->
+      <div class="form-group">
+				<label for="field1">Bank Name</label>
+				<ol class="breadcrumb">
+        			<li style="color:black" class="breadcrumb-item active">012	&nbsp;&nbsp;Bank of China (Hong Kong)</li>
+     			</ol>
+				</div>
+            <div class="form-group">
+				<label for="field2">Bank Account Number</label>
+				<ol class="breadcrumb">
+        			<li style="color:black" class="breadcrumb-item active">1234 5678 1912 3456</li>
+     			</ol>
+			</div>
+        <div class="form-group">
+        
+          	<label for="field2">Expiration date</label>
+				<ol class="breadcrumb">
+        			<li style="color:black" class="breadcrumb-item active">11 / 2019</li>
+     			</ol>
+     		<br>	
+     		<label style="display: block;text-align:center">Do You Confirm New Card Details?</label>		
+     			
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md">  </div>
+          <div class="col-md">
+          <a class="btn btn-lg btn-primary btn-block"  name="Submit" value="Login" type="Submit" href="main.html">Ok</a> 
+          </div>
+          <div class="col-md">
+          <a class="btn btn-lg btn-danger btn-block"  name="Submit" value="Login" type="Submit" href="main.html">Cancle</a> 
+          </div>
+        </div>
+
+      </div>
+    </section>
+      <!-- /.row -->
+
+     
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2017 Start Bootstrap. All Rights Reserved.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Privacy</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Terms</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/live_search.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109354792-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+    gtag('config', 'UA-109354792-1');
+  </script>
+
+  </body>
+
+</html>
