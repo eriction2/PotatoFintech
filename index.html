@@ -9,6 +9,7 @@
     <meta name="description" content="Potato FinTech CityU Hong Kong CS3382 Group 1 - Potato FinTech helps users in FinTech related manners. PayIt, SplitIt, ManageIt. This Website was created for the course CS3382 for developing PotatoFinTech">
     <meta name="author" content="Potato FinTech CityU Hong Kong CS3382 Group 1 ">
 	<meta name="keywords" content="Potato FinTech CityU Hong Kong CS3382, Potato, FinTech, PotatoFinTech, CityU, City University, Hong, Kong, CS3382, Group 1, FinTechPotato, Hong Kong">
+  <meta name="msvalidate.01" content="7C6ED328ED5FD6F975C251581CC83C88" />
     <title>"Potato FinTech" CityU Hong Kong CS3382 - Group 1</title>
 
   <link rel="icon" href="img/logo1.png">
@@ -40,7 +41,10 @@
 
   <body id="page-top">
 
-
+       <!-- For accessibility - skip to main content -->
+    <div id="skiptocontent">
+      <a class="hidden" href="#main">skip to main content</a>
+    </div>
 
        <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -99,7 +103,7 @@
         <div class="row h-100">
           <div class="col-lg-7 my-auto">
             <div class="header-content mx-auto">
-              <h1 class="mb-5">Transfer money to others instantly. Split payment with friends easily.</h1>
+              <h1 class="mb-5" id="main">Transfer money to others instantly. Split payment with friends easily.</h1>
               <h3>Split payment with friends and simply send money via Potato FinTech, social payment app.</h3>
               <br>  
               <a href="sign_up.html" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
@@ -131,13 +135,13 @@
         <hr class="star-primary">
         <div class="row">
           <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
-              <div class="caption">
+            <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal" alt="PayIt!">
+              <div class="caption" alt="jajaja">
                 <div class="caption-content">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/payit.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/payit.jpg" alt="PayIt">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -147,7 +151,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/splitit.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/splitit.jpg" alt="SplitIt!">
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -157,7 +161,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/manageit.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio/manageit.jpg" alt="ManageIt">
             </a>
           </div>
         </div>
@@ -307,6 +311,22 @@
   		gtag('js', new Date());
 		gtag('config', 'UA-109354792-1');
 	</script>
+  <script>
+  $(document).ready(function() {
+    // add a click handler to all links 
+    // that point to same-page targets (href="#...")    
+    $("a[href^='#']").click(function() {
+      // get the href attribute of the internal link
+      // then strip the first character off it (#)
+      // leaving the corresponding id attribute
+      $("#"+$(this).attr("href").slice(1)+"")
+        // give that id focus (for browsers that didn't already do so)
+        .focus()
+        // add a highlight effect to that id (comment out if not using)     
+        .effect("highlight", {}, 3000);
+    });
+  });
+</script>
 
   </body>
 </html>

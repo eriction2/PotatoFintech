@@ -46,7 +46,10 @@ a {
   transition: all .35s; }
   a:hover, a:focus {
     color: #fcbd20; }
-
+a.hidden {
+    position: absolute;
+    left: -999px;
+  }
 hr {
   max-width: 100px;
   margin: 25px auto 0;
